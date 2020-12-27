@@ -2,6 +2,8 @@
 yum update -y
 yum install -y git
 amazon-linux-extras install -y php7.3
+yum install php-mbstring -y
+yum install mc -y
 export COMPOSER_HOME=/home/ec2-user
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer --version=1.10.9
